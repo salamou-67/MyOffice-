@@ -3,96 +3,201 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing Page Demo</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <title>Création de Sites Web en Algérie</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     body {
-      margin:0;
-      font-family:'Poppins', sans-serif;
-      background:#f9f9f9;
-      color:#333;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
     }
     header {
-      background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80') no-repeat center/cover;
-      color:white;
-      text-align:center;
-      padding:120px 20px;
+      background: linear-gradient(135deg, #007BFF, #00C6FF);
+      color: #fff;
+      padding: 60px 20px;
+      text-align: center;
     }
     header h1 {
-      font-size:2.8em;
-      margin:0 0 20px;
-      font-weight:600;
+      font-size: 2.8em;
+      margin: 0;
     }
     header p {
-      font-size:1.2em;
-      margin:0 0 30px;
+      font-size: 1.2em;
+      margin-top: 15px;
     }
-    .cta {
-      background:#00b894;
-      color:white;
-      padding:15px 30px;
-      border-radius:6px;
-      text-decoration:none;
-      font-weight:600;
-      transition:0.3s;
+    header a {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 25px;
+      background: #fff;
+      color: #007BFF;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: 0.3s;
     }
-    .cta:hover {
-      background:#019874;
+    header a:hover {
+      background: #007BFF;
+      color: #fff;
     }
     section {
-      padding:60px 20px;
-      text-align:center;
+      padding: 60px 20px;
+      text-align: center;
+      max-width: 1000px;
+      margin: auto;
     }
-    .features {
-      display:flex;
-      justify-content:center;
-      gap:30px;
-      flex-wrap:wrap;
-      margin-top:30px;
+    section h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #007BFF;
     }
-    .feature {
-      background:white;
-      padding:30px;
-      border-radius:10px;
-      box-shadow:0 4px 12px rgba(0,0,0,0.1);
-      width:280px;
+    .features, .portfolio, .pricing, .why {
+      display: grid;
+      gap: 30px;
     }
-    .feature i {
-      font-size:40px;
-      color:#00b894;
-      margin-bottom:15px;
+    .features div, .portfolio div, .pricing div, .why div {
+      background: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+    .portfolio img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    .pricing div {
+      border: 2px solid #007BFF;
+    }
+    .cta {
+      background: #007BFF;
+      color: #fff;
+      padding: 60px 20px;
+    }
+    .cta a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 14px 30px;
+      background: #fff;
+      color: #007BFF;
+      font-weight: 700;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+    footer {
+      background: #222;
+      color: #aaa;
+      padding: 30px;
+      text-align: center;
+      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>Un Site Web Moderne pour Votre Commerce</h1>
-  <p>Attirez plus de clients avec un site rapide, beau et professionnel.</p>
-  <a class="cta" href="https://wa.me/213654878400">Contactez-moi sur WhatsApp</a>
-</header>
+  <!-- Hero -->
+  <header>
+    <h1>Des Sites Web Modernes pour Votre Business</h1>
+    <p>À partir de 15,000 DA – Livraison rapide en 7 jours</p>
+    <a href="https://wa.me/213654878400">Contactez-moi sur WhatsApp</a>
+  </header>
 
-<section>
-  <h2>Pourquoi Choisir Mon Service ?</h2>
-  <div class="features">
-    <div class="feature">
-      <i class="fas fa-bolt"></i>
-      <h3>Livraison Rapide</h3>
-      <p>Votre site prêt en moins de 7 jours.</p>
+  <!-- Value Proposition -->
+  <section>
+    <h2>Pourquoi un site web ?</h2>
+    <div class="features">
+      <div>
+        <h3>Plus de clients</h3>
+        <p>Votre business sera visible 24/7 et accessible partout.</p>
+      </div>
+      <div>
+        <h3>Plus de crédibilité</h3>
+        <p>Un site web inspire confiance, plus qu’une simple page Facebook.</p>
+      </div>
+      <div>
+        <h3>Plus de ventes</h3>
+        <p>Avec un site moderne, vous augmentez vos chances de vendre.</p>
+      </div>
     </div>
-    <div class="feature">
-      <i class="fas fa-laptop-code"></i>
-      <h3>Design Moderne</h3>
-      <p>Un style premium qui donne confiance à vos clients.</p>
+  </section>
+
+  <!-- Portfolio -->
+  <section>
+    <h2>Mes Réalisations</h2>
+    <div class="portfolio">
+      <div>
+        <img src="https://i.imgur.com/roEZy9R.jpg" alt="Site Café">
+        <h3>Café</h3>
+        <a href="https://salamou-67.github.io/testweb/" target="_blank">Voir le site</a>
+      </div>
+      <div>
+        <img src="https://i.imgur.com/HrIf7n6.jpg" alt="Site Study Space">
+        <h3>Study Space</h3>
+        <a href="https://salamou-67.github.io/Study-space-/index.html" target="_blank">Voir le site</a>
+      </div>
+      <div>
+        <img src="https://i.imgur.com/HGdtcP5.jpg" alt="SaaS Product">
+        <h3>SaaS Product</h3>
+        <a href="https://salamou-67.github.io/reelflow/" target="_blank">Voir le site</a>
+      </div>
     </div>
-    <div class="feature">
-      <i class="fas fa-money-bill-wave"></i>
-      <h3>Prix Accessibles</h3>
-      <p>Des offres adaptées à tous les budgets.</p>
+  </section>
+
+  <!-- Pricing -->
+  <section>
+    <h2>Tarifs</h2>
+    <div class="pricing">
+      <div>
+        <h3>Starter</h3>
+        <p>Une page simple</p>
+        <p><strong>15,000 DA</strong></p>
+      </div>
+      <div>
+        <h3>Standard</h3>
+        <p>Site multi-pages + design personnalisé</p>
+        <p><strong>25,000 DA</strong></p>
+      </div>
+      <div>
+        <h3>Premium</h3>
+        <p>Fonctionnalités avancées + assistance</p>
+        <p><strong>35,000 DA</strong></p>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <!-- Why Choose Me -->
+  <section>
+    <h2>Pourquoi me choisir ?</h2>
+    <div class="why">
+      <div>
+        <h3>Rapidité</h3>
+        <p>Livraison en 7 jours maximum.</p>
+      </div>
+      <div>
+        <h3>Abordable</h3>
+        <p>Des prix adaptés aux entrepreneurs algériens.</p>
+      </div>
+      <div>
+        <h3>Support Local</h3>
+        <p>Je parle votre langue et je comprends vos besoins.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final Call -->
+  <section class="cta">
+    <h2>Prêt à lancer votre site web ?</h2>
+    <a href="https://wa.me/213654878400">Contactez-moi sur WhatsApp</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Création de Sites Web – Tous droits réservés</p>
+  </footer>
 
 </body>
 </html>
