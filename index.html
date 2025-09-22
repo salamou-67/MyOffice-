@@ -3,76 +3,96 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Création de Sites Web en Algérie</title>
+  <title>Landing Page Demo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
-    body { font-family: Arial, sans-serif; margin:0; padding:0; }
-    header { background:#222; color:#fff; padding:40px; text-align:center; }
-    header h1 { margin:0; font-size:2em; }
-    header p { margin:10px 0; font-size:1.2em; }
-    .cta { display:inline-block; margin-top:20px; padding:12px 20px; background:#00b894; color:white; text-decoration:none; border-radius:5px; }
-    section { padding:40px 20px; text-align:center; }
-    .portfolio img { width:300px; margin:15px; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.2); }
-    .pricing { display:flex; justify-content:center; gap:20px; flex-wrap:wrap; }
-    .plan { border:1px solid #ddd; border-radius:8px; padding:20px; width:250px; }
-    .plan h3 { margin-top:0; }
-    footer { background:#222; color:#fff; text-align:center; padding:20px; }
+    body {
+      margin:0;
+      font-family:'Poppins', sans-serif;
+      background:#f9f9f9;
+      color:#333;
+    }
+    header {
+      background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80') no-repeat center/cover;
+      color:white;
+      text-align:center;
+      padding:120px 20px;
+    }
+    header h1 {
+      font-size:2.8em;
+      margin:0 0 20px;
+      font-weight:600;
+    }
+    header p {
+      font-size:1.2em;
+      margin:0 0 30px;
+    }
+    .cta {
+      background:#00b894;
+      color:white;
+      padding:15px 30px;
+      border-radius:6px;
+      text-decoration:none;
+      font-weight:600;
+      transition:0.3s;
+    }
+    .cta:hover {
+      background:#019874;
+    }
+    section {
+      padding:60px 20px;
+      text-align:center;
+    }
+    .features {
+      display:flex;
+      justify-content:center;
+      gap:30px;
+      flex-wrap:wrap;
+      margin-top:30px;
+    }
+    .feature {
+      background:white;
+      padding:30px;
+      border-radius:10px;
+      box-shadow:0 4px 12px rgba(0,0,0,0.1);
+      width:280px;
+    }
+    .feature i {
+      font-size:40px;
+      color:#00b894;
+      margin-bottom:15px;
+    }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Sites Web Professionnels pour Commerces en Algérie</h1>
-  <p>À partir de 15,000 DA – Livraison rapide en 7 jours</p>
+  <h1>Un Site Web Moderne pour Votre Commerce</h1>
+  <p>Attirez plus de clients avec un site rapide, beau et professionnel.</p>
   <a class="cta" href="https://wa.me/213654878400">Contactez-moi sur WhatsApp</a>
 </header>
 
-<section class="portfolio">
-  <h2>📂 Mes Réalisations</h2>
-  <p>Voici quelques exemples de sites déjà créés :</p>
-  <div>
-    <img src="cafe-screenshot.jpg" alt="Site Café">
-    <p><a href="https://salamou-67.github.io/testweb/" target="_blank">Voir le site Café</a></p>
-  </div>
-  <div>
-    <img src="shop-screenshot.jpg" alt="Site Boutique">
-    <p><a href="https://salamou-67.github.io/reelflow/" target="_blank">Voir le site Boutique</a></p>
-  </div>
-  <div>
-    <img src="school-screenshot.jpg" alt="Site Scolaire">
-    <p><a href="https://salamou-67.github.io/Study-space-/index.html" target="_blank">Voir le site Scolaire</a></p>
-  </div>
-</section>
-
-<section class="pricing">
-  <div class="plan">
-    <h3>Starter</h3>
-    <p>✔ 1 page simple<br>✔ Design moderne<br>✔ Responsive</p>
-    <strong>15,000 DA</strong>
-  </div>
-  <div class="plan">
-    <h3>Standard</h3>
-    <p>✔ 3-5 pages<br>✔ Formulaire de contact<br>✔ Intégration réseaux sociaux</p>
-    <strong>25,000 DA</strong>
-  </div>
-  <div class="plan">
-    <h3>Premium</h3>
-    <p>✔ Site complet<br>✔ Domaine + hébergement<br>✔ Personnalisation avancée</p>
-    <strong>40,000 DA</strong>
-  </div>
-</section>
-
 <section>
-  <h2>Pourquoi me choisir ?</h2>
-  <p>🚀 Livraison rapide (5–7 jours)<br>
-     💰 Prix accessibles<br>
-     📱 Sites modernes et responsives<br>
-     🇩🇿 Support en arabe et en français</p>
-  <a class="cta" href="https://wa.me/213XXXXXXXXX">Réservez votre site maintenant</a>
+  <h2>Pourquoi Choisir Mon Service ?</h2>
+  <div class="features">
+    <div class="feature">
+      <i class="fas fa-bolt"></i>
+      <h3>Livraison Rapide</h3>
+      <p>Votre site prêt en moins de 7 jours.</p>
+    </div>
+    <div class="feature">
+      <i class="fas fa-laptop-code"></i>
+      <h3>Design Moderne</h3>
+      <p>Un style premium qui donne confiance à vos clients.</p>
+    </div>
+    <div class="feature">
+      <i class="fas fa-money-bill-wave"></i>
+      <h3>Prix Accessibles</h3>
+      <p>Des offres adaptées à tous les budgets.</p>
+    </div>
+  </div>
 </section>
-
-<footer>
-  <p>© 2025 – Création de sites web en Algérie | Contact WhatsApp : +213 XX XX XX XX</p>
-</footer>
 
 </body>
 </html>
